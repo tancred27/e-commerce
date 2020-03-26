@@ -16,6 +16,12 @@ export const addItemToCart = (cartItems, item) => {
   return [...cartItems, { ...item, quantity: 1 }];
 };
 
+/**
+ * A function to check remove an item from the cart
+ * @param {array} cartItems Contains cart items of logged in user
+ * @param {object} cartItemToRemove The item which the user wants to remove
+ * @return {array} Returns an array of cart items with the desired items removed
+ */
 export const removeItemFromCart = (cartItems, cartItemToRemove) => {
   const existingCartItem = cartItems.find(
     cartItem => cartItem.id === cartItemToRemove.id

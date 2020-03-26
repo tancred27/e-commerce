@@ -6,7 +6,7 @@ export const toggleCartHidden = () => ({
 });
 
 /**
- * Generate an action with item as payload to add the item to cart
+ * Generate an action with item as payload to add it to cart
  * @param {object} item contains the details of the cart-item
  */
 export const addItem = item => ({
@@ -14,11 +14,19 @@ export const addItem = item => ({
   payload: item
 });
 
+/**
+ * Generate an action with item as payload to remove it
+ * @param {object} item contains the details of the cart-item
+ */
 export const removeItem = item => ({
   type: cartActionTypes.REMOVE_ITEM,
   payload: item
 });
 
+/**
+ * Generate an action with item as paylod to clear it from the cart
+ * @param {object} item contains the details of the cart-item
+ */
 export const clearItemFromCart = item => ({
   type: cartActionTypes.CLEAR_ITEM_FROM_CART,
   payload: item
