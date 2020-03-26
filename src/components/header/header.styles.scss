@@ -1,3 +1,10 @@
+$main-color: black;
+@mixin shrinkLabel {
+  top: -14px;
+  font-size: 17px;
+  color: $main-color;
+}
+
 .header {
   height: 70px;
   width: 100%;
@@ -21,6 +28,11 @@
     .option {
       padding: 10px 15px;
       cursor: pointer;
+
+      &:hover {
+        @include shrinkLabel();
+        border-bottom: 1px solid black;
+      }
     }
   }
 }

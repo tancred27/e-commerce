@@ -3,8 +3,13 @@
   display: flex;
   flex-direction: column;
 
-  .title {
-    margin: 10px 0;
+  .card {
+    transform: translateY(-45%);
+    height: 100px;
+    width: 80%;
+    align-self: center;
+    background-color: #ccffff;
+    text-align: center;
   }
 
   .buttons {

@@ -3,6 +3,15 @@
   flex-direction: column;
   width: 380px;
 
+  .card {
+    transform: translateY(-45%);
+    height: 100px;
+    width: 80%;
+    align-self: center;
+    background-color: #ccffff;
+    text-align: center;
+  }
+
   .title {
     margin: 10px 0;
   }

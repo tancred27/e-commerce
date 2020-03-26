@@ -6,8 +6,12 @@ import "./login-and-register.styles.scss";
 
 const SignInPage = () => (
   <div className="login-and-register">
-    <SignIn />
-    <SignUp />
+    <div className="card">
+      <SignIn />
+    </div>
+    <div className="card">
+      <SignUp />
+    </div>
   </div>
 );
 
